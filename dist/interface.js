@@ -18,5 +18,12 @@ function createBoard() {
             });
         }
     }
+    return cells;
 }
+var board = createBoard();
+board[0].piece = {
+    move: function (from, to) {
+        return true;
+    }
+};
 //# sourceMappingURL=interface.js.map
